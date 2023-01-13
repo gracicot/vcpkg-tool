@@ -102,6 +102,7 @@ namespace vcpkg
         constexpr static StringLiteral MANIFEST_ROOT_DIR_ARG = "x-manifest-root";
         Optional<std::string> manifest_root_dir;
 
+        constexpr static StringLiteral BUILDTREES_ROOT_DIR_ENV = "X_VCPKG_BUILDTREES_ROOT";
         constexpr static StringLiteral BUILDTREES_ROOT_DIR_ARG = "x-buildtrees-root";
         Optional<std::string> buildtrees_root_dir;
         constexpr static StringLiteral DOWNLOADS_ROOT_DIR_ENV = "VCPKG_DOWNLOADS";

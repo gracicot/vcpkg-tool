@@ -748,6 +748,7 @@ namespace vcpkg
         from_env(get_env, HOST_TRIPLET_ENV, host_triplet);
         vcpkg_root_dir_env = get_environment_variable(VCPKG_ROOT_DIR_ENV);
         from_env(get_env, DOWNLOADS_ROOT_DIR_ENV, downloads_root_dir);
+        from_env(get_env, BUILDTREES_ROOT_DIR_ENV, buildtrees_root_dir);
         from_env(get_env, DEFAULT_VISUAL_STUDIO_PATH_ENV, default_visual_studio_path);
         from_env(get_env, ASSET_SOURCES_ENV, asset_sources_template_env);
         from_env(get_env, REGISTRIES_CACHE_DIR_ENV, registries_cache_dir);
@@ -971,6 +972,7 @@ namespace vcpkg
     constexpr StringLiteral VcpkgCmdArguments::VCPKG_ROOT_DIR_ARG;
     constexpr StringLiteral VcpkgCmdArguments::MANIFEST_ROOT_DIR_ARG;
 
+    constexpr StringLiteral VcpkgCmdArguments::BUILDTREES_ROOT_DIR_ENV;
     constexpr StringLiteral VcpkgCmdArguments::BUILDTREES_ROOT_DIR_ARG;
     constexpr StringLiteral VcpkgCmdArguments::DOWNLOADS_ROOT_DIR_ENV;
     constexpr StringLiteral VcpkgCmdArguments::DOWNLOADS_ROOT_DIR_ARG;
